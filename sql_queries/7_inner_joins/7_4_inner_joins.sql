@@ -1,5 +1,6 @@
 -- Return film titles and language from the film and language table
-SELECT film.title, language.name
+-- Change name column to language makes more sense)
+SELECT film.title, language.name AS language
 FROM film
 JOIN language
 ON film.language_id = language.language_id
