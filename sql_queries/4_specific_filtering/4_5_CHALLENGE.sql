@@ -38,12 +38,12 @@ IS NULL;
 SELECT title, description
 FROM film
 WHERE description
-LIKE '%Moose%'
+LIKE '%Moose%';
 
 
 -- How many movies contain the word 'Moose' in the description
 SELECT COUNT(*)
 FROM film
 WHERE description
-LIKE '%Moose%'
+LIKE '%Moose%';
 --80

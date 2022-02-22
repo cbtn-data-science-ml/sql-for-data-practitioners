@@ -3,7 +3,7 @@
 SELECT film.title, language.name AS language
 FROM film
 JOIN language
-ON film.language_id = language.language_id
+ON film.language_id = language.language_id;
 
 -- Inner join payment and customer tables ON customer_id
 SELECT *
