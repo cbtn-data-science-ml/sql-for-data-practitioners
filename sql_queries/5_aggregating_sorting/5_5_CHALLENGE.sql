@@ -1,10 +1,10 @@
--- Return the max amount as max_amount from the payment table
+-- What is the max amount from the payment table? Return the max amount aliased as max_amount
 SELECT MAX(amount) AS max_amount
 FROM payment;
+-- 11.99
 
-
--- Return the average payment as payment_mean from the payment table
-SELECT AVG(amount) 
+-- What is the average payment from the payment table? Return the average amount aliased as avg_payment
+SELECT AVG(amount) AS avg_payment
 FROM payment;
 
 
@@ -14,8 +14,13 @@ FROM payment
 ORDER BY staff_id, amount DESC;
 
 
--- Find the minimum payment amount for each staff member by staff_id
+-- What is the minimum payment amount for each staff member by staff_id
 SELECT staff_id, MIN(amount)
+FROM payment
+GROUP BY staff_id;
+
+-- What is the maximum payment amount for each staff member by staff_id
+SELECT staff_id, MAX(amount)
 FROM payment
 GROUP BY staff_id;
 
