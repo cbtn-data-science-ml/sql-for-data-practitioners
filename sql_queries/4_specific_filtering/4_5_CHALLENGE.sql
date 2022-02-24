@@ -12,17 +12,17 @@ WHERE amount
 NOT IN(2.99, 5.99);
 
 
--- Return the count of actor names that start with the letter Z
+-- Return the count of actor first names that start with the letter Z
 SELECT COUNT(*)
 FROM actor
 WHERE first_name
 LIKE 'Z%';
 
 
--- A customer want to see a list of movies that don't have actors with the last name Cage
-SELECT COUNT(*)
+-- A customer wants to see a list of actors that don't have the last name Cage
+SELECT first_name, last_name
 FROM actor
-WHERE first_name
+WHERE last_name
 NOT LIKE 'Cage';
 
 

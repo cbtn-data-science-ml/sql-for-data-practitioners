@@ -13,3 +13,8 @@ SELECT staff_id, amount
 FROM payment
 ORDER BY amount DESC
 LIMIT 10;
+
+SELECT staff_id, amount
+FROM payment
+ORDER BY amount DESC
+LIMIT -10;

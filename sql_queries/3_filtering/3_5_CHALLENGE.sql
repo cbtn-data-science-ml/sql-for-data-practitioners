@@ -3,7 +3,7 @@ SELECT COUNT(*)
 FROM payment
 WHERE payment_date > '2007-04-30' AND amount > 5.99;
 
--- 50
+-- 249
 
 
 -- How many payment records for amounts larger than 5.99 AFTER January 30TH, 2007
