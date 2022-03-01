@@ -1,5 +1,5 @@
 -- Return a full outer join of inventory and film on film_id
--- How many copies of Ace Goldfinger at store_id 2? Three
+-- How many copies of Ace Goldfinger with a film_id of 2? Three
 SELECT inventory.film_id, store_id, film.title
 FROM inventory
 FULL OUTER JOIN film
@@ -32,4 +32,4 @@ SELECT address_id
 FROM staff
 UNION
 SELECT store_id
-FROM store;
+FROM store; 
